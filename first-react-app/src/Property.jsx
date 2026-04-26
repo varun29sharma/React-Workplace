@@ -6,4 +6,4 @@ export default function Property({name,price,rating,id}){
             <h4>{rating}⭐️</h4>
         </div>
     )
-}
+} 
