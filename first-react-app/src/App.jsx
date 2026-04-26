@@ -9,19 +9,39 @@ import Heading from './Heading';
 import ColorList from './ColorList';
 import Slots from './Slots';
 import ShoppingList from './ShoppingList';
+import Propertylist from './PropertyList';
 
-const data = [
-  {item: 'veggies', quantity: 5, completed: false},
-  {item: 'pineapple', quantity: 3, completed: true},
-  {item: 'Milk', quantity: 2, completed: true},
-  {item: 'bananas', quantity: 12, completed: false},
+// const data = [
+//   {item: 'veggies', quantity: 5, completed: false},
+//   {item: 'pineapple', quantity: 3, completed: true},
+//   {item: 'Milk', quantity: 2, completed: true},
+//   {item: 'bananas', quantity: 12, completed: false},
 
-]
+// ]
+
+const properties = [
+  { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
+  { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
+  { id: 129032, name: "Cactus Retreat", rating: 4.75, price: 300 },
+  { id: 129033, name: "Redwood Treehouse Escape", rating: 4.9, price: 120 },
+  { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
+  { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
+];
+
 
 function App() {
   return (
     <div>
-      <ShoppingList items = {data}/>
+      <Propertylist props = {properties}/>
+
+
+
+
+
+
+
+
+      {/* <ShoppingList items = {data}/> */}
       {/* <Heading color="aqua" text="Welcome,to React" /> */}
       {/* <DoubleDice />
       <DoubleDice />
