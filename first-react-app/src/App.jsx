@@ -11,6 +11,29 @@ import Slots from './Slots';
 import ShoppingList from './ShoppingList';
 import Propertylist from './PropertyList';
 import Clicker from './Clicker';
+import Counter from './Counter';
+import Toggler from './Toggler';
+import ColorBox  from './ColorBox';
+import ColorBoxGrid from './ColorBoxGrid';
+
+const colors = [
+  "#E53E3E", // Red
+  "#38A169", // Green
+  "#3182CE", // Blue
+  "#D69E2E", // Yellow
+  "#805AD5", // Purple
+  "#319795", // Teal
+  "#D53F8C", // Pink
+  "#DD6B20", // Orange
+  "#718096", // Gray
+  "#4A5568", // Dark Gray
+  "#F56565", // Light Red
+  "#48BB78", // Light Green
+  "#4299E1", // Light Blue
+  "#ED8936", // Light Orange
+  "#9F7AEA", // Light Purple
+  "#667EEA", // Indigo
+];
 
 // const data = [
 //   {item: 'veggies', quantity: 5, completed: false},
@@ -33,7 +56,11 @@ import Clicker from './Clicker';
 function App() {
   return (
     <div>
-      <Clicker />
+      <ColorBoxGrid colors={colors}/>
+      {/* <Toggler /> */}
+      {/* <Counter /> */}
+      {/* <Clicker message = "HI!!!" btnText = "Click Me"/> */}
+      {/*  <Clicker message = "Stop Clicking" btnText = "don't click"/> */}
 
 
 
